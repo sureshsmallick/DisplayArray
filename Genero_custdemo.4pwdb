@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WorkspaceDatabase fileContentsEncoding="CP1252" version="3.0">
+<File n="maintest.4gl" s="2" ts="20191223231526844">
+<Fct c="1" el="6" l="2" n="main()" t="F" v="pub">
+<Call c="7" l="5" n="fgl_winmessage" t="F"/>
+</Fct>
+</File>
+</WorkspaceDatabase>

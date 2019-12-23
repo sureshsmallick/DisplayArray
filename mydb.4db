@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Schema gstVersion="31407" id="{a207b4b6-2aa3-450e-ad6f-a169b2184ade}" version="4.0">
+  <AGSettings version="1.1">
+    <DynamicProperties version="2">
+      <DynamicProperty description="Associated label when generating form" initialValue="" isDefaultInherited="false" isHidden="false" label="Label" name="label" readOnly="false" type="TEXT"/>
+      <DynamicProperty description="Associated widget" editorInfo="contains:ButtonEdit|CheckBox|ComboBox|DateEdit|DateTimeEdit|Edit|FFImage|FFLabel|Field|Phantom|ProgressBar|RadioGroup|Slider|SpinEdit|TextEdit|TimeEdit" initialValue="Edit" isDefaultInherited="false" isHidden="false" label="Widget" name="widget" readOnly="false" type="ENUM"/>
+      <DynamicPropertyGroup collapsed="false" description="Formfied properties" label="Formfield" name="formfieldGroup" properties="label;widget"/>
+    </DynamicProperties>
+    <NodeInfos version="1">
+      <NodeInfo mimeType="db/column" properties="widget;label"/>
+    </NodeInfos>
+  </AGSettings>
+  <ExtractionSettings last="SQLite">
+    <ExtractionOptions casens="LowerCase" cvmeth="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ignerr="true" systab="false" type="SQLite"/>
+  </ExtractionSettings>
+  <Table active="true" name="account" status="U" uuid="db/table119">
+    <Column fglLength="80" fglType="0" name="userid" notNull="true" order="1" status="U" uuid="db/column653"/>
+    <Column fglLength="80" fglType="0" name="email" notNull="true" order="2" status="U" uuid="db/column655"/>
+    <Column fglLength="80" fglType="0" name="firstname" notNull="true" order="3" status="U" uuid="db/column657"/>
+    <Column fglLength="80" fglType="0" name="lastname" notNull="true" order="4" status="U" uuid="db/column659"/>
+    <Column fglLength="2" fglType="0" name="acstatus" notNull="false" order="5" status="U" uuid="db/column661"/>
+    <Column fglLength="80" fglType="0" name="addr1" notNull="true" order="6" status="U" uuid="db/column663"/>
+    <Column fglLength="40" fglType="0" name="addr2" notNull="false" order="7" status="U" uuid="db/column665"/>
+    <Column fglLength="80" fglType="0" name="city" notNull="true" order="8" status="U" uuid="db/column667"/>
+    <Column fglLength="80" fglType="0" name="state" notNull="false" order="9" status="U" uuid="db/column669"/>
+    <Column fglLength="20" fglType="0" name="zip" notNull="true" order="10" status="U" uuid="db/column671"/>
+    <Column fglLength="3" fglType="0" name="country" notNull="true" order="11" status="U" uuid="db/column673"/>
+    <Column fglLength="80" fglType="0" name="phone" notNull="true" order="12" status="U" uuid="db/column675"/>
+    <Column fglLength="80" fglType="0" name="langpref" notNull="true" order="13" status="U" uuid="db/column677"/>
+    <Column fglLength="10" fglType="0" name="favcategory" notNull="false" order="14" status="U" uuid="db/column679"/>
+    <Column fglLength="4" fglType="2" name="mylistopt" notNull="false" order="15" status="U" uuid="db/column681"/>
+    <Column fglLength="4" fglType="2" name="banneropt" notNull="false" order="16" status="U" uuid="db/column683"/>
+    <Column fglLength="3" fglType="0" name="sourceapp" notNull="true" order="17" status="U" uuid="db/column685"/>
+    <Index indexColumns="userid" indexConstraint="unique" name="sqlite_autoindex_account_1" status="U" uuid="db/index71"/>
+  </Table>
+  <Table active="true" name="category" status="U" uuid="db/table121">
+    <Column fglLength="10" fglType="0" name="catid" notNull="true" order="1" status="U" uuid="db/column687"/>
+    <Column fglLength="2" fglType="1" name="catorder" notNull="false" order="2" status="U" uuid="db/column689"/>
+    <Column fglLength="80" fglType="0" name="catname" notNull="false" order="3" status="U" uuid="db/column691"/>
+    <Column fglLength="255" fglType="0" name="catdesc" notNull="false" order="4" status="U" uuid="db/column693"/>
+    <Column fglLength="255" fglType="0" name="catpic" notNull="false" order="5" status="U" uuid="db/column695"/>
+    <Index indexColumns="catid" indexConstraint="unique" name="sqlite_autoindex_category_1" status="U" uuid="db/index73"/>
+  </Table>
+  <Table active="true" name="country" status="U" uuid="db/table123">
+    <Column fglLength="3" fglType="0" name="code" notNull="false" order="1" status="U" uuid="db/column697"/>
+    <Column fglLength="50" fglType="0" name="codedesc" notNull="false" order="2" status="U" uuid="db/column699"/>
+    <Index indexColumns="code" indexConstraint="unique" name="sqlite_autoindex_country_1" status="U" uuid="db/index75"/>
+  </Table>
+  <Table active="true" name="customer" status="U" uuid="db/table125">
+    <Column fglLength="4" fglType="2" name="store_num" notNull="true" order="1" status="U" uuid="db/column701"/>
+    <Column fglLength="30" fglType="0" name="store_name" notNull="false" order="2" status="U" uuid="db/column703"/>
+    <Column fglLength="20" fglType="0" name="addr" notNull="false" order="3" status="U" uuid="db/column705"/>
+    <Column fglLength="20" fglType="0" name="addr2" notNull="false" order="4" status="U" uuid="db/column707"/>
+    <Column fglLength="15" fglType="0" name="city" notNull="false" order="5" status="U" uuid="db/column709"/>
+    <Column fglLength="2" fglType="0" name="state" notNull="false" order="6" status="U" uuid="db/column711"/>
+    <Column fglLength="5" fglType="0" name="zipcode" notNull="false" order="7" status="U" uuid="db/column713"/>
+    <Column fglLength="30" fglType="0" name="contact_name" notNull="false" order="8" status="U" uuid="db/column715"/>
+    <Column fglLength="18" fglType="0" name="phone" notNull="false" order="9" status="U" uuid="db/column717"/>
+  </Table>
+  <Table active="true" name="customers" status="U" uuid="db/table127">
+    <Column fglLength="4" fglType="2" name="customer_num" notNull="true" order="1" status="U" uuid="db/column719"/>
+    <Column fglLength="30" fglType="0" name="fname" notNull="false" order="2" status="U" uuid="db/column721"/>
+    <Column fglLength="30" fglType="0" name="lname" notNull="false" order="3" status="U" uuid="db/column723"/>
+    <Column fglLength="30" fglType="201" name="company" notNull="false" order="4" status="U" uuid="db/column725"/>
+    <Column fglLength="20" fglType="0" name="addr" notNull="false" order="5" status="U" uuid="db/column727"/>
+    <Column fglLength="20" fglType="0" name="addr2" notNull="false" order="6" status="U" uuid="db/column729"/>
+    <Column fglLength="20" fglType="0" name="city" notNull="false" order="7" status="U" uuid="db/column731"/>
+    <Column fglLength="15" fglType="0" name="state" notNull="false" order="8" status="U" uuid="db/column733"/>
+    <Column fglLength="5" fglType="0" name="zipcode" notNull="false" order="9" status="U" uuid="db/column735"/>
+    <Column fglLength="15" fglType="0" name="phone" notNull="false" order="10" status="U" uuid="db/column737"/>
+  </Table>
+  <Table active="true" name="emp" status="U" uuid="db/table129">
+    <Column fglLength="4" fglType="2" name="id" notNull="false" order="1" status="U" uuid="db/column739"/>
+  </Table>
+  <Table active="true" name="factory" status="U" uuid="db/table131">
+    <Column fglLength="3" fglType="0" name="fac_code" notNull="true" order="1" status="U" uuid="db/column741"/>
+    <Column fglLength="15" fglType="0" name="fac_name" notNull="false" order="2" status="U" uuid="db/column743"/>
+  </Table>
+  <Table active="true" name="inventory" status="U" uuid="db/table133">
+    <Column fglLength="10" fglType="0" name="itemid" notNull="true" order="1" status="U" uuid="db/column745"/>
+    <Column fglLength="4" fglType="2" name="qty" notNull="true" order="2" status="U" uuid="db/column747"/>
+    <Index indexColumns="itemid" indexConstraint="unique" name="sqlite_autoindex_inventory_1" status="U" uuid="db/index77"/>
+  </Table>
+  <Table active="true" name="item" status="U" uuid="db/table135">
+    <Column fglLength="10" fglType="0" name="itemid" notNull="true" order="1" status="U" uuid="db/column749"/>
+    <Column fglLength="10" fglType="0" name="productid" notNull="true" order="2" status="U" uuid="db/column751"/>
+    <Column fglLength="2562" fglType="5" name="listprice" notNull="false" order="3" status="U" uuid="db/column753"/>
+    <Column fglLength="2562" fglType="5" name="unitcost" notNull="false" order="4" status="U" uuid="db/column755"/>
+    <Column fglLength="4" fglType="2" name="supplier" notNull="false" order="5" status="U" uuid="db/column757"/>
+    <Column fglLength="2" fglType="0" name="itstatus" notNull="false" order="6" status="U" uuid="db/column759"/>
+    <Column fglLength="80" fglType="0" name="attr1" notNull="false" order="7" status="U" uuid="db/column761"/>
+    <Column fglLength="80" fglType="0" name="attr2" notNull="false" order="8" status="U" uuid="db/column763"/>
+    <Column fglLength="80" fglType="0" name="attr3" notNull="false" order="9" status="U" uuid="db/column765"/>
+    <Column fglLength="80" fglType="0" name="attr4" notNull="false" order="10" status="U" uuid="db/column767"/>
+    <Column fglLength="80" fglType="0" name="attr5" notNull="false" order="11" status="U" uuid="db/column769"/>
+    <Index indexColumns="itemid" indexConstraint="unique" name="sqlite_autoindex_item_1" status="U" uuid="db/index79"/>
+  </Table>
+  <Table active="true" name="items" status="U" uuid="db/table137">
+    <Column fglLength="4" fglType="2" name="order_num" notNull="true" order="1" status="U" uuid="db/column771"/>
+    <Column fglLength="4" fglType="2" name="stock_num" notNull="true" order="2" status="U" uuid="db/column773"/>
+    <Column fglLength="2" fglType="1" name="quantity" notNull="false" order="3" status="U" uuid="db/column775"/>
+    <Column fglLength="2050" fglType="5" name="price" notNull="false" order="4" status="U" uuid="db/column777"/>
+  </Table>
+  <Table active="true" name="lineitem" status="U" uuid="db/table139">
+    <Column fglLength="4" fglType="2" name="orderid" notNull="true" order="1" status="U" uuid="db/column779"/>
+    <Column fglLength="4" fglType="2" name="linenum" notNull="true" order="2" status="U" uuid="db/column781"/>
+    <Column fglLength="10" fglType="0" name="itemid" notNull="true" order="3" status="U" uuid="db/column783"/>
+    <Column fglLength="4" fglType="2" name="quantity" notNull="true" order="4" status="U" uuid="db/column785"/>
+    <Column fglLength="2562" fglType="5" name="unitprice" notNull="true" order="5" status="U" uuid="db/column787"/>
+    <Index indexColumns="orderid, linenum" indexConstraint="unique" name="sqlite_autoindex_lineitem_1" status="U" uuid="db/index81"/>
+  </Table>
+  <Table active="true" name="orders" status="U" uuid="db/table141">
+    <Column fglLength="4" fglType="2" name="order_num" notNull="true" order="1" status="U" uuid="db/column789"/>
+    <Column fglLength="4" fglType="7" name="order_date" notNull="false" order="2" status="U" uuid="db/column791"/>
+    <Column fglLength="4" fglType="2" name="store_num" notNull="true" order="3" status="U" uuid="db/column793"/>
+    <Column fglLength="3" fglType="0" name="fac_code" notNull="false" order="4" status="U" uuid="db/column795"/>
+    <Column fglLength="10" fglType="0" name="ship_instr" notNull="false" order="5" status="U" uuid="db/column797"/>
+    <Column fglLength="1" fglType="0" name="promo" notNull="false" order="6" status="U" uuid="db/column799"/>
+  </Table>
+  <Table active="true" name="orderstatus" status="U" uuid="db/table143">
+    <Column fglLength="4" fglType="2" name="orderid" notNull="true" order="1" status="U" uuid="db/column801"/>
+    <Column fglLength="4" fglType="2" name="linenum" notNull="true" order="2" status="U" uuid="db/column803"/>
+    <Column fglLength="4" fglType="7" name="mdate" notNull="true" order="3" status="U" uuid="db/column805"/>
+    <Column fglLength="2" fglType="0" name="orstatus" notNull="true" order="4" status="U" uuid="db/column807"/>
+    <Index indexColumns="orderid, linenum" indexConstraint="unique" name="sqlite_autoindex_orderstatus_1" status="U" uuid="db/index83"/>
+  </Table>
+  <Table active="true" name="product" status="U" uuid="db/table145">
+    <Column fglLength="10" fglType="0" name="productid" notNull="true" order="1" status="U" uuid="db/column809"/>
+    <Column fglLength="10" fglType="0" name="catid" notNull="true" order="2" status="U" uuid="db/column811"/>
+    <Column fglLength="80" fglType="0" name="prodname" notNull="false" order="3" status="U" uuid="db/column813"/>
+    <Column fglLength="255" fglType="0" name="proddesc" notNull="false" order="4" status="U" uuid="db/column815"/>
+    <Column fglLength="255" fglType="0" name="prodpic" notNull="false" order="5" status="U" uuid="db/column817"/>
+    <Index indexColumns="productid" indexConstraint="unique" name="sqlite_autoindex_product_1" status="U" uuid="db/index85"/>
+  </Table>
+  <Table active="true" name="seqreg" status="U" uuid="db/table147">
+    <Column fglLength="30" fglType="201" name="sr_name" notNull="true" order="1" status="U" uuid="db/column819"/>
+    <Column fglLength="4" fglType="2" name="sr_last" notNull="true" order="2" status="U" uuid="db/column821"/>
+    <Index indexColumns="sr_name" indexConstraint="unique" name="sqlite_autoindex_seqreg_1" status="U" uuid="db/index87"/>
+  </Table>
+  <Table active="true" name="signon" status="U" uuid="db/table149">
+    <Column fglLength="80" fglType="0" name="userid" notNull="true" order="1" status="U" uuid="db/column823"/>
+    <Column fglLength="25" fglType="0" name="password" notNull="true" order="2" status="U" uuid="db/column825"/>
+    <Index indexColumns="userid" indexConstraint="unique" name="sqlite_autoindex_signon_1" status="U" uuid="db/index89"/>
+  </Table>
+  <Table active="true" name="state" status="U" uuid="db/table151">
+    <Column fglLength="2" fglType="0" name="state_code" notNull="true" order="1" status="U" uuid="db/column827"/>
+    <Column fglLength="15" fglType="0" name="state_name" notNull="false" order="2" status="U" uuid="db/column829"/>
+  </Table>
+  <Table active="true" name="stock" status="U" uuid="db/table153">
+    <Column fglLength="4" fglType="2" name="stock_num" notNull="true" order="1" status="U" uuid="db/column831"/>
+    <Column fglLength="3" fglType="0" name="fac_code" notNull="true" order="2" status="U" uuid="db/column833"/>
+    <Column fglLength="15" fglType="0" name="description" notNull="false" order="3" status="U" uuid="db/column835"/>
+    <Column fglLength="2050" fglType="5" name="reg_price" notNull="false" order="4" status="U" uuid="db/column837"/>
+    <Column fglLength="2050" fglType="5" name="promo_price" notNull="false" order="5" status="U" uuid="db/column839"/>
+    <Column fglLength="4" fglType="7" name="price_updated" notNull="false" order="6" status="U" uuid="db/column841"/>
+    <Column fglLength="4" fglType="0" name="unit" notNull="false" order="7" status="U" uuid="db/column843"/>
+  </Table>
+  <Table active="true" name="students" status="U" uuid="db/table155">
+    <Column fglLength="4" fglType="2" name="id" notNull="false" order="1" status="U" uuid="db/column845"/>
+    <Column fglLength="20" fglType="0" name="fname" notNull="false" order="2" status="U" uuid="db/column847"/>
+    <Column fglLength="20" fglType="0" name="lname" notNull="false" order="3" status="U" uuid="db/column849"/>
+    <Column fglLength="4" fglType="2" name="age" notNull="false" order="4" status="U" uuid="db/column851"/>
+    <Index indexColumns="id" indexConstraint="primaryKey" name="sqlite_autoindex_students_1" status="U" uuid="db/index91"/>
+  </Table>
+  <Table active="true" name="supplier" status="U" uuid="db/table157">
+    <Column fglLength="4" fglType="2" name="suppid" notNull="true" order="1" status="U" uuid="db/column853"/>
+    <Column fglLength="80" fglType="0" name="name" notNull="false" order="2" status="U" uuid="db/column855"/>
+    <Column fglLength="2" fglType="0" name="sustatus" notNull="true" order="3" status="U" uuid="db/column857"/>
+    <Column fglLength="80" fglType="0" name="addr1" notNull="false" order="4" status="U" uuid="db/column859"/>
+    <Column fglLength="80" fglType="0" name="addr2" notNull="false" order="5" status="U" uuid="db/column861"/>
+    <Column fglLength="80" fglType="0" name="city" notNull="false" order="6" status="U" uuid="db/column863"/>
+    <Column fglLength="80" fglType="0" name="state" notNull="false" order="7" status="U" uuid="db/column865"/>
+    <Column fglLength="5" fglType="0" name="zip" notNull="false" order="8" status="U" uuid="db/column867"/>
+    <Column fglLength="80" fglType="0" name="phone" notNull="false" order="9" status="U" uuid="db/column869"/>
+    <Index indexColumns="suppid" indexConstraint="unique" name="sqlite_autoindex_supplier_1" status="U" uuid="db/index93"/>
+  </Table>
+  <Views ActiveView="View-1" showLabels="true">
+    <View Name="View-1">
+      <Layout>
+        <![CDATA[AAAAAgAAABYAZABiAC8AdABhAGIAbABlADEANQA1QLUYAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANQAxQLLAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANAA3QLBoAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMwA3QKUYAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANAAzQKwgAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMgA5QJdwAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMgAzQILAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANAA5QLGUAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANAAxQKnIAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMQA5AAAAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMgA3QJLAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMgAxQHLAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANAA1QK54AAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANQA3QLZEAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANQAzQLPsAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMwAzQKBoAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMgA1QIwgAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMwA1QKLAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMwAxQJwgAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMwA5QKdwAAAAAABANAAAAAAAAAAAAAAAAAAAAQ==]]>
+      </Layout>
+    </View>
+  </Views>
+</Schema>
